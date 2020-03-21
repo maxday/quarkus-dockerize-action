@@ -1,5 +1,5 @@
-ARG EXECUTABLE_PATH
 FROM cescoffier/native-base:latest
-COPY $EXECUTABLE_PATH /application-runner
+ARG executable_path
+COPY $executable_path /application-runner
 EXPOSE 8080
 CMD ["./application-runner", "-Dquarkus.http.host=0.0.0.0"]
