@@ -1,5 +1,5 @@
 name: 'Dockerize a Quarkus native app'
-description: 'Github Action to Dockerize a Quarkus native app'
+description: 'Dockerize a Quarkus native app'
 branding:
   icon: 'anchor'
   color: 'yellow'
