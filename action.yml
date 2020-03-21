@@ -1,5 +1,5 @@
-name: 'Dockerize a Quarkus native app'
-description: 'Dockerize a Quarkus native app'
+name: 'Dockerize a Quarkus native application'
+description: 'Dockerize a Quarkus native application'
 branding:
   icon: 'anchor'
   color: 'yellow'
