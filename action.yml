@@ -4,13 +4,13 @@ branding:
   icon: 'codesandbox'
   color: 'yellow'
 inputs:
-  - executablePath:
+    executablePath:
       description: 'path to the Quarkus executable you want to put in the docker image'
       required: true
-  - tag:
+    tag:
       description: 'docker tag to set once the image is built'
       required: true
-  - dockerfilePath:
+    dockerfilePath:
       description: 'path to the Dockerfile you want to use - leave blank for default'
       required: false
 outputs:
