@@ -1,6 +1,3 @@
-# quarkus-native-build-docker-action
-
-
 # quarkus-dockerize action
 
 Action to embed a native executable into a Docker image.
