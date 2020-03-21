@@ -27,7 +27,8 @@ if [ -n "$DOCKERFILE_PATH" ]; then
   fi
 fi
 
-docker build . -f $DOCKER_FILE_TO_USE -t native-build-image
+echo $EXECUTABLE_PATH
+ls -la
 
 chmod u+x $EXECUTABLE_PATH
 docker build . -f $DOCKER_FILE_TO_USE -t $TAG
