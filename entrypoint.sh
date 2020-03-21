@@ -2,7 +2,7 @@
 
 set -e
 
-EXECUTABLE_PATH=1
+EXECUTABLE_PATH=$1
 TAG=$2
 DOCKERFILE_PATH=$3
 DOCKER_FILE_TO_USE="/Dockerfile"
@@ -26,9 +26,6 @@ if [ -n "$DOCKERFILE_PATH" ]; then
     exit 1
   fi
 fi
-
-echo $EXECUTABLE_PATH
-ls -la
 
 chmod u+x $EXECUTABLE_PATH
 docker build . -f $DOCKER_FILE_TO_USE -t $TAG
