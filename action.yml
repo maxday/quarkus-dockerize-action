@@ -1,7 +1,7 @@
 name: 'Dockerize a Quarkus native app'
 description: 'Github Action to Dockerize a Quarkus native app'
 branding:
-  icon: 'codesandbox'
+  icon: 'anchor'
   color: 'yellow'
 inputs:
     executablePath:
