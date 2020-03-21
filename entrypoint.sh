@@ -28,6 +28,6 @@ if [ -n "$DOCKERFILE_PATH" ]; then
 fi
 
 chmod u+x $EXECUTABLE_PATH
-docker build . -f $DOCKER_FILE_TO_USE -t $TAG --build-arg executable_path=${EXECUTABLE_PATH}
+docker build --build-arg executable_path=${EXECUTABLE_PATH} . -f $DOCKER_FILE_TO_USE -t $TAG
 
 echo ::set-output name=image::$TAG
